@@ -1327,6 +1327,11 @@ export default function PaymentApp() {
                     <option value="hospital">Hospital</option>
                     <option value="others">Others</option>
                     <option value="advertisement">Advertisement</option>
+                    <option value="Liquor">Liquor</option>
+                    <option value="House">House</option>
+                    <option value="Business">Business</option>
+                    <option value="Property">Property</option>
+                    <option value="Plot">Plot</option>
                   </select>
 
                   <label className="block text-gray-800 font-semibold mb-2">Fee ID</label>

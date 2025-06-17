@@ -728,7 +728,7 @@ const HARDCODED_FEES = [
   { Id: "12867", FeeName: "Land Amalgamation", FFAFeeName: "Land Amalgamation", FeeAmount: 2500 }
 ];
 
-const ENTITY_CATEGORIES = ["vehicles", "hospital", "others", "advertisement"];
+const ENTITY_CATEGORIES = ["vehicles", "hospital", "others", "advertisement", "Liquor", "House", "Business", "Property", "Plot"];
 
 export default function PaymentApp() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

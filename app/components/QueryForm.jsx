@@ -254,7 +254,7 @@ export default function PaymentApp() {
   
       const stkPayload = {
         Phone: formData.phoneNumber,
-        Amount: billingResult.amount,
+        Amount: formData.amountTopay,
         AccountReference: billingResult.billRefNumber
       };
   
@@ -273,7 +273,7 @@ export default function PaymentApp() {
       alert(
         `✅ Billing & STK Push Successful\n\n` +
         `Billing Ref: ${billingResult.billRefNumber}\n` +
-        `Amount: ${billingResult.amount}\n` +
+        `Amount: ${formData.amountTopay}\n` +
         `Status: ${billingResult.status}\n\n` +
         `STK: ${stkResult[0]?.CustomerMessage || 'Request sent to phone'}`
       );

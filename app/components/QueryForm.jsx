@@ -745,7 +745,6 @@ export default function PaymentApp() {
     entityTopay: "",
     amountTopay: "",
     feeId: "",
-    feeName: "",
     quantity: ""
   });
 
@@ -922,9 +921,9 @@ export default function PaymentApp() {
         entityTopay: formData.entityTopay,
         amountTopay: formData.amountTopay,
         feeId: formData.feeId,
-        feeName: formData.feeName,
-        quantity: formData.quantity
-      };
+        quantity: formData.quantity,
+        entityId: "0"
+      };
   
       const missingFields = Object.entries(payload)
         .filter(([_, val]) => !val)
@@ -1369,7 +1368,7 @@ export default function PaymentApp() {
                   <p><strong>Plate Number:</strong> {formData.plateNumber || 'N/A'}</p>
                   <p><strong>ID Number:</strong> {formData.idNumber || 'N/A'}</p>
                   <p><strong>Entity to Pay:</strong> {formData.entityTopay}</p>
-                  
+                  <p><strong>Quantity:</strong> {formData.quantity}</p>
                   <p><strong>Amount to Pay:</strong> {formData.amountTopay}</p>
                   <p><strong>Fee ID:</strong> {formData.feeId}</p>
                   

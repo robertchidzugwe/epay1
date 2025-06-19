@@ -983,7 +983,6 @@ export default function PaymentApp() {
         entityTopay: "",
         amountTopay: "",
         feeId: "",
-        feeName: "",
         quantity: ""
       });
   
